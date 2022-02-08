@@ -30,11 +30,11 @@ The evaluation script for this benchmark is present at `eval/eval_claim_detectio
 python eval_claim_detection.py --gold_file <path to dev/test.json> --predictions_file <path to outputs to evaluate> --<sub task to evaluate>
 ```
 where the `<sub task to evaluate>` flag can be the following:
-- `--eval_claim`: Evaluate claim sentence detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/edit/main/README.md#claim-detection))
-- `--eval_claimer`: Evaluate claimer detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/edit/main/README.md#claimer-detection))
-- `--eval_claim_object`: Evaluate claim object detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/edit/main/README.md#stance-detection))
-- `--eval_claim_span`: Evaluate claim span detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/edit/main/README.md#span-detection))
-- `--eval_stance`: Evaluate stance detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/edit/main/README.md#stance-detection))
+- `--eval_claim`: Evaluate claim sentence detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/blob/main/README.md#claim-detection))
+- `--eval_claimer`: Evaluate claimer detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/blob/main/README.md#claimer-detection))
+- `--eval_claim_object`: Evaluate claim object detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/blob/main/README.md#stance-detection))
+- `--eval_claim_span`: Evaluate claim span detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/blob/main/README.md#span-detection))
+- `--eval_stance`: Evaluate stance detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/blob/main/README.md#stance-detection))
 
 ### Numbers
 
