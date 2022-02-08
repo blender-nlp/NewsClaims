@@ -4,7 +4,7 @@ This repository contains code and data for the paper:
 ```
 NewsClaims: A New Benchmark for Claim Detection from News with Background Knowledge 
 ```
-
+Arxiv link: [https://arxiv.org/pdf/2112.08544.pdf](https://arxiv.org/pdf/2112.08544.pdf)
 
 
 ### Data
@@ -22,10 +22,23 @@ The data contains the following items:
 -  `all_sents.json`: This file contains the list of sentences for each news article (to be used for identifying claim sentences).
 -  `text`: This folder contains the raw text for each news article.
 
+### Evaluation Script
+
+The evaluation script for this benchmark is present at `eval/eval_claim_detection.py` which can be used as follows:
+
+```
+python eval_claim_detection.py --gold_file <path to dev/test.json> --predictions_file <path to outputs to evaluate> --<sub task to evaluate>
+```
+where the `<sub task to evaluate>` flag can be the following:
+- `--eval_claim`: Evaluate claim sentence detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/edit/main/README.md#claim-detection))
+- `--eval_claimer`: Evaluate claimer detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/edit/main/README.md#claimer-detection))
+- `--eval_claim_object`: Evaluate claim object detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/edit/main/README.md#stance-detection))
+- `--eval_claim_span`: Evaluate claim span detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/edit/main/README.md#span-detection))
+- `--eval_stance`: Evaluate stance detection. (Numbers [here](https://github.com/uiucnlp/NewsClaims/edit/main/README.md#stance-detection))
 
 ### Numbers
 
-We release updated numbers for each sub-task using the updated version of the dataset:
+We release updated numbers for each sub-task using the new version of the dataset:
 
 #### Claim Detection
 
@@ -75,4 +88,15 @@ Human | 85.8 | 81.3 | 88.9 |
 SRL | 35.8 | 2.4 |
 PolNeAR-Source | <strong>38.9</strong> | <strong>2.7</strong> |
 
+### Citation
+
+If you used this dataset in your work, please consider citing our paper:
+```
+@article{reddy2021newsclaims,
+  title={NewsClaims: A New Benchmark for Claim Detection from News with Background Knowledge},
+  author={Reddy, Revanth Gangi and Chinthakindi, Sai and Wang, Zhenhailong and Fung, Yi R and Conger, Kathryn S and Elsayed, Ahmed S and Palmer, Martha and Ji, Heng},
+  journal={arXiv preprint arXiv:2112.08544},
+  year={2021}
+}
+```
 
