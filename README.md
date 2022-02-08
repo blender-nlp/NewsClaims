@@ -13,7 +13,14 @@ We have released an updated version of the corpus with 889 claims over 143 news 
 
 We release dev and test sets with 18 articles containing 103 claims and 125 articles containing 786 claims, respectively.
 
-You can find the data here: 
+You can find the data [here](https://drive.google.com/file/d/1jlQ0kQLS0kLbrXIC1fh6oT2HsWppx5QT/view?usp=sharing).
+
+The data contains the following items:
+
+-  `dev.json`: This is the development file.
+-  `test.json`: This is the test file.
+-  `all_sents.json`: This file contains the list of sentences for each news article (to be used for identifying claim sentences).
+-  `text`: This folder contains the raw text for each news article.
 
 
 ### Numbers
